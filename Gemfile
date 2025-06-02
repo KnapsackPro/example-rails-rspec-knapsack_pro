@@ -50,9 +50,9 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 
-  gem 'rspec-rails'
+  gem "rspec-rails"
 
-  gem 'knapsack_pro'
+  gem "knapsack_pro"
 end
 
 group :development do
