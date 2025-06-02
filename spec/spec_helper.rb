@@ -92,3 +92,9 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+RSpec.configure do |config|
+  config.before(:suite) do
+    puts 'RSpec before(:suite) hook called.'
+  end
+end

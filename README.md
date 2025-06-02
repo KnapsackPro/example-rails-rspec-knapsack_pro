@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+bundle install
+```
 
-Things you may want to cover:
+# RSpec
 
-* Ruby version
+Run:
 
-* System dependencies
+```
+rspec
+```
 
-* Configuration
+The RSpec before(:suite) hook is called.
 
-* Database creation
+Expected output:
 
-* Database initialization
+```
+RSpec before(:suite) hook called.
+.........
 
-* How to run the test suite
+Finished in 0.00998 seconds (files took 0.51173 seconds to load)
+9 examples, 0 failures
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
