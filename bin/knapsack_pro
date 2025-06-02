@@ -1,0 +1,17 @@
+#!/bin/bash
+
+export KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC=be5ca096c07e995a8800ee0ce1b1ec7c
+export KNAPSACK_PRO_LOG_LEVEL=warn
+
+# detect branch and commit hash with git
+export KNAPSACK_PRO_REPOSITORY_ADAPTER=git
+export KNAPSACK_PRO_PROJECT_DIR=.
+# or, you can define them on your own (please ensure you comment out the above two env vars)
+#export KNAPSACK_PRO_COMMIT_HASH=commit-hash
+#export KNAPSACK_PRO_BRANCH=branch
+
+export KNAPSACK_PRO_CI_NODE_BUILD_ID=$(openssl rand -base64 32)
+export KNAPSACK_PRO_CI_NODE_TOTAL=1
+export KNAPSACK_PRO_CI_NODE_INDEX=0
+
+bundle exec rake "knapsack_pro:queue:rspec[--format progress]"
