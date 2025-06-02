@@ -1,18 +1,18 @@
 # README
 
-```
+```bash
 bundle install
 ```
 
 # RSpec + Knapsack Pro
 
-The RSpec `before(:suite)` hook is defined in `spec/spec_helper.rb`.
+The RSpec `before(:suite)` hook is defined in [`spec/spec_helper.rb`](spec/spec_helper.rb).
 
-Edit `bin/knapsack_pro` to use your API token.
+Edit [`bin/knapsack_pro`](bin/knapsack_pro) to use your API token.
 
 Run RSpec tests with Knapsack Pro:
 
-```
+```bash
 bin/knapsack_pro
 ```
 
